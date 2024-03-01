@@ -1,0 +1,69 @@
+/*reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica,Arial, sans-serif;
+}
+/*
+Từ ngoài vào trong
+Từ trên xuống dưới
+Từ tổng thể đến chi tiết
+*/
+
+
+/*
+Vị trí
+Kich thước
+Màu sắc
+Kiểu dáng (kiểu chữ, hình dạng, đường viền, đổ bóng,..)
+*/
+#main{}
+#header{
+    height: 46.5px;
+    background-color: black;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav > li > a{
+  text-transform: uppercase;
+}
+#nav .subnav{
+    display: none;
+    min-width: 10px;
+    position: absolute;
+    background-color: white;
+    
+}
+#nav .subnav li{
+    display: block;
+}
+#nav .subnav a{
+    color: black;
+}
+#nav .subnav li:hover {
+    background-color: #ccc;
+}
+#slider{}
+#content{}
+#footer{}
