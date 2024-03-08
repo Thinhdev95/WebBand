@@ -116,10 +116,10 @@ Kiểu dáng (kiểu chữ, hình dạng, đường viền, đổ bóng,..)
     padding-top: 30px;
     background-color: white;
     max-width: 800px;
-    align-items: center;
-    position: absolute; 
-    transform: translateX(-50%); 
-    left: 50%;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    /* position: absolute;  */
+    /* transform: translateX(-50%);  */
+    /* left: 50%; */
 }
 #content .content-heading {
     text-align: center;
@@ -150,11 +150,16 @@ Kiểu dáng (kiểu chữ, hình dạng, đường viền, đổ bóng,..)
     padding-bottom: 10px;
 }
 /* Tour section */
-#tour-section{
-    background-color: #ccc;
-    height: 500px;
-    position: absolute;
+#tour-info{
+  background-color: #000;
 }
+#tour-info .title{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+
+}
+  
 
 
 
