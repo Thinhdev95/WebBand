@@ -274,13 +274,50 @@ Kiểu dáng (kiểu chữ, hình dạng, đường viền, đổ bóng,..)
 #contact .right{
     display: grid;
     grid-template-areas:
-      'header1 header2'
-      'main main';
-    grid-template-columns: 1fr 1fr; /* Hai cột có chiều rộng bằng nhau cho hàng đầu tiên */
+    'header1 header2'
+    'header3 header4';
+    grid-template-rows: auto auto; /* Two rows with automatic height */
+    grid-template-columns: auto auto; /* Two columns with automatic width */
     gap: 10px;
     padding: 10px;
-    
 }
+#contact .right input{
+    padding-left: 10px;
+}
+.contact-half.right .message {
+    grid-area: header3 / span 2; /* Place the Message input in the second row, spanning two columns */
+    width: calc(100%); /* Set the width to 100% minus the total gap (10px) multiplied by 2 */
+}
+#contact .send{
+    text-align: right;
+    padding: 10px;
+}
+#contact .send .btn-send{
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+#sidebar-footer{
+    position: relative; 
+    padding-top: 50%;
+    background: url('https://www.w3schools.com/w3images/map.jpg') top center / cover  no-repeat;
+}
+#footer{
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+#footer i{
+    font-size: larger;
+}
+#footer p{
+    padding-top: 5px ;
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 13px;
+}
+
 
 
   
